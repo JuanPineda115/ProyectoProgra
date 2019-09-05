@@ -1,9 +1,14 @@
+// Clase Estudiante //
+// Identifica y obtiene los datos del alumno //
+
 public class Estudiante{
+	// Atributos de la clase Estudiante //
     private String nombre ;
     private int edad ; 
 	private int alimentos ;
     private double peso ;
 	
+	// Metodos de la clase Estudiante // // set y get //
 	public String getNombre(){
 		return nombre;
 	}
