@@ -8,12 +8,12 @@ public class Principal{
 		ArrayList<String> curso= new ArrayList<String>();
 		ArrayList<String> alumnos= new ArrayList<String>();
 		Academico control =  new Academico();
-//Aqui terminan los new
-		String nombreEscuela = "";
-		int desicion1 = 0;
-		int desicion2  = 0;
+//Aqui terminan las 
+		String nombreEscuela="";
+		int decision1 = 0;
+		int decision2  = 0;
 		int parametro = 0;
-		String grado = "";
+		String grado;
 		int cursos = 0;
 		//Se supone que tanto Nalumnos, nombre de la escuela, cursos etc etc se van a guardar en la base de datos 
 		//sin embargo todavia no se a podido conectar java con MongoDb, por lo que la parte del programa 
@@ -23,8 +23,8 @@ public class Principal{
 		String nombrealumnos = "";
 
 //Comienza el programa (hoy si se va a poner bueno)
-		System.out.println("Desea ingresar informacion de la Escuela (0), ingresar infomacion de solo los alumnos (1) o bien consultarla(2)");
-		desicion1 = s.nextInt();
+		System.out.println("Desea ingresar informacion de la Escuela (0) \ningresar infomacion de solo los alumnos (1)\nConsultar inforación de los alumnos");
+		decision1 = s.nextInt();
 		while(parametro == 0){
 			System.out.println("Ingrese el nombre de la escuela " );
 			nombreEscuela = s.nextLine();
@@ -51,8 +51,8 @@ public class Principal{
 			
 				
 			System.out.println("Desea ingresar otra vez la informacion? si(1) o no (0)");	
-			desicion2 = s.nextInt();
-			if (desicion2 == 0){
+			decision2 = s.nextInt();
+			if (decision2 == 0){
 				break;
 				
 				}
@@ -67,7 +67,7 @@ public class Principal{
 			
 		
 		
-		
+		s.close();
 	}
 	
 }
