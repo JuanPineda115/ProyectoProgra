@@ -1,14 +1,17 @@
+// Importar libreria de Scanner //
 import java.util.Scanner;
+// Importar ArrayList //
 import java.util.ArrayList;
+// Clase Main = Principal //
 public class Principal{
 	public static void main(String[] args){
 		
-//Inicializando todo lo que dse deba inicializar desde el principio 
+// Arranque del programa // 
 		Scanner s = new Scanner(System.in);
 		ArrayList<String> curso= new ArrayList<String>();
 		ArrayList<String> alumnos= new ArrayList<String>();
 		Academico control =  new Academico();
-//Aqui terminan las 
+// Identificación de Variables //
 		String NESC="";
 		int decision1 = 0;
 		int decision2  = 0;
@@ -17,12 +20,13 @@ public class Principal{
 		int cursos = 0;
 		//Se supone que tanto Nalumnos, nombre de la escuela, cursos etc etc se van a guardar en la base de datos 
 		//sin embargo todavia no se a podido conectar java con MongoDb, por lo que la parte del programa 
-		//presentado es ilustrativa
+		//presentado es ilustrativa, para la siguiente entrega se pretende involucrar la Base de Datos //
 		int Nalumnos = 0;
 		String nombrecursos="";
 		String nombrealumnos = "";
 
-//Comienza el programa (hoy si se va a poner bueno)
+//Comienza el programa (hoy si se va a poner bueno) //
+		// El programa pide datos al usuario para arrancar //
 		System.out.println("Desea ingresar informacion de la Escuela (0) \ningresar infomacion de solo los alumnos (1)\nConsultar inforación de los alumnos(2)");
 		decision1 = s.nextInt();
 		while(parametro == 0){
@@ -42,7 +46,7 @@ public class Principal{
 //La idea de todo esto es tener un metodo que guarde en la base de datos la informacion basica 
 //Sin embargo no se a podido hacer que la base de datos funcione con java
 //Vamos a utilizar mongoDb.Y en la siguiente version, se espera que este ya sirva y que se hayan definido los metodos
-//Para guardado de datos en mongodb y tambien para hacer busquedas. 			
+//Para guardado de datos en mongodb y tambien para hacer busquedas //			
 			System.out.println("Ingrese la cantidad de alumnos");
 			Nalumnos = s.nextInt();
 			for ( int i = 0;i < (Nalumnos+1); i++){
