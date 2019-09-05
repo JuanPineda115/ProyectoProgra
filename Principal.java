@@ -9,7 +9,7 @@ public class Principal{
 		ArrayList<String> alumnos= new ArrayList<String>();
 		Academico control =  new Academico();
 //Aqui terminan las 
-		String nombreEscuela="";
+		String NESC="";
 		int decision1 = 0;
 		int decision2  = 0;
 		int parametro = 0;
@@ -23,11 +23,12 @@ public class Principal{
 		String nombrealumnos = "";
 
 //Comienza el programa (hoy si se va a poner bueno)
-		System.out.println("Desea ingresar informacion de la Escuela (0) \ningresar infomacion de solo los alumnos (1)\nConsultar inforación de los alumnos");
+		System.out.println("Desea ingresar informacion de la Escuela (0) \ningresar infomacion de solo los alumnos (1)\nConsultar inforación de los alumnos(2)");
 		decision1 = s.nextInt();
 		while(parametro == 0){
 			System.out.println("Ingrese el nombre de la escuela " );
-			nombreEscuela = s.nextLine();
+			NESC = s.nextLine();
+			s.nextLine();
 			System.out.println("Ingrese el grado " );
 			grado = s.nextLine();
 			System.out.println("Ingrese la cantidad de cursos");
