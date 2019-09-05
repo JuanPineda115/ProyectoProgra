@@ -1,13 +1,16 @@
-//Clase de notas para guardar las notas del alumno //
+// Clase de notas para guardar las notas del estudiante //
 
 import java.util.Scanner;
 
 public class Academico{
-//Es la forma que por ahora se piensa guardar datos, sin embargo no se va a utilizar el metodo hasta que se 
-//pueda utilizar mongodb, probablemente se tenga de modificar. 
+	
+// Es la forma que por ahora se piensa guardar datos, sin embargo no se va a utilizar el metodo hasta que se pueda utilizar mongodb, probablemente se tenga de modificar //
+	
 	static void asignador(String args[]){
 		Scanner s = new Scanner(System.in);
-		//atributos de la clase
+		
+		// Atributos de la clase Academico // 
+		
 		String[] clase1 = new String[5];
 		int[] nota1 = new int[10];
 
@@ -26,7 +29,7 @@ public class Academico{
 		int x=0; 
 		int opcion1 = 0;
     
-//ingresar clases y notas de las mismas
+// Ingreso de Clase y Notas de estas //
 		do {
 			do {
 				System.out.println("Registrar notas del alumno: ");
