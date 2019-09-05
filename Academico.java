@@ -25,7 +25,6 @@ public class Academico{
 
 		int x=0; 
 		int opcion1 = 0;
-		String opcion2 = "";
     
 //ingresar clases y notas de las mismas
 		do {
@@ -66,6 +65,7 @@ public class Academico{
 				} while(opcion1 ==1);
 		
 			} while(opcion1 == 1);
+			s.close();
 		
 		}
 
