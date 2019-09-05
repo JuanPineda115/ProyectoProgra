@@ -3,17 +3,9 @@
 import java.util.Scanner;
 
 public class Academico{
-	static String[] asignador(int a,int i,String parametro){
 //Es la forma que por ahora se piensa guardar datos, sin embargo no se va a utilizar el metodo hasta que se 
 //pueda utilizar mongodb, probablemente se tenga de modificar. 
-		String nombre = "";
-		String [] A;
-		A = new String [a];
-		A[i]= parametro;	
-		return A;
-		
-	}
-	static void quesearmenlospincheschingadazos(String args[]){
+	static void asignador(String args[]){
 		Scanner s = new Scanner(System.in);
 		//atributos de la clase
 		String[] clase1 = new String[5];
