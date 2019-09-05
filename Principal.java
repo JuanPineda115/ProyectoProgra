@@ -7,6 +7,8 @@ public class Principal{
 		Scanner s = new Scanner(System.in);
 		ArrayList<String> curso= new ArrayList<String>();
 		ArrayList<String> alumnos= new ArrayList<String>();
+		Academico control =  new Academico();
+//Aqui terminan los new
 		String nombreEscuela = "";
 		int desicion1 = 0;
 		int desicion2  = 0;
@@ -33,16 +35,17 @@ public class Principal{
 			System.out.println("Ingrese el nombre de dichos cursos ");
 			for ( int i = 0;i < (cursos+1); i++){
 				nombrecursos = s.nextLine();
-				//Se tiene que respetar el metodo mvc, sin embargo, todavia no se a hecho el metodo para agregar cursos.La version final lo 
-				//TIENE QUE TENER y lo va a tener c:
-				curso.add(nombrecursos);	
+				curso.add(nombrealumnos);	
 				}
-				
+//El programa tiene el for para cursos y alumnos, que en este caso, rompen con el modelo vista controlador 
+//La idea de todo esto es tener un metodo que guarde en la base de datos la informacion basica 
+//Sin embargo no se a podido hacer que la base de datos funcione con java
+//Vamos a utilizar mongoDb.Y en la siguiente version, se espera que este ya sirva y que se hayan definido los metodos
+//Para guardado de datos en mongodb y tambien para hacer busquedas. 			
 			System.out.println("Ingrese la cantidad de alumnos");
 			Nalumnos = s.nextInt();
 			for ( int i = 0;i < (Nalumnos+1); i++){
 				nombrealumnos = s.nextLine();
-			//Es lo mismo que con el  for anterior
 				alumnos.add(nombrealumnos);	
 				}
 			
