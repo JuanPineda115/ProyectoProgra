@@ -1,6 +1,8 @@
 //Primera versión sobre la aplicación a crear
 //5/09/2019
 //Este será nuestro main, el cual interactúa con el usuario. 
+//La aplicación que se desea realizar es acerca de como influyen los alimentos que un estudiante consume con su rendimiento academico//
+//El programa no cuenta con todas sus funcionalidades. 
 
 //Debemos de importar las librerías correspondientes para realizar las distintas operaciones.
 // Importar libreria de Scanner //
