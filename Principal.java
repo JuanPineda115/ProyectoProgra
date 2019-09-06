@@ -1,3 +1,8 @@
+//Primera versión sobre la aplicación a crear
+//5/09/2019
+//Este será nuestro main, el cual interactúa con el usuario. 
+
+//Debemos de importar las librerías correspondientes para realizar las distintas operaciones.
 // Importar libreria de Scanner //
 import java.util.Scanner;
 // Importar ArrayList //
@@ -6,7 +11,7 @@ import java.util.ArrayList;
 public class Principal{
 	public static void main(String[] args){
 		
-// Arranque del programa // 
+// Inicio del programa // 
 		Scanner s = new Scanner(System.in);
 		ArrayList<String> curso= new ArrayList<String>();
 		ArrayList<String> alumnos= new ArrayList<String>();
