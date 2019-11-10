@@ -1,3 +1,4 @@
+package com.jcg.java.mongodb;
 // Clase de notas para guardar las notas del estudiante //
 //Esta clase se realizo con el fin de realizar una comparción con los alimentos de los alumnos y que tanto influyen en su rendimiento academico. 
 import java.util.Scanner;
